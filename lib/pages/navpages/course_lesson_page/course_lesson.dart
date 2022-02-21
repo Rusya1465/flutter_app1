@@ -13,6 +13,12 @@ class _CourseLessonState extends State<CourseLesson> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('01 Введение'),
+        centerTitle: true,
+        automaticallyImplyLeading: true,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios),
+          onPressed: () {},
+        ),
       ),
       body: const Center(child: Text('Python')),
     );
