@@ -10,6 +10,11 @@ class CourseLesson extends StatefulWidget {
 class _CourseLessonState extends State<CourseLesson> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('01 Введение'),
+      ),
+      body: const Center(child: Text('Python')),
+    );
   }
 }
