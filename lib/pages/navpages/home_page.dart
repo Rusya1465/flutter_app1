@@ -1,5 +1,6 @@
 
-import "../../widgets/search.dart";
+import 'package:flutter_app1/widgets/product_cart.dart';
+
 
 
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child:SearchAppBar() ,
+        child:CartView() ,
         
       ),
       
