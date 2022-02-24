@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_app1/pages/navpages/home_page.dart';
 import 'package:video_player/video_player.dart';
 
 class CourseLesson extends StatefulWidget {
@@ -14,12 +15,24 @@ class _CourseLessonState extends State<CourseLesson> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('01 Введение'),
+        backgroundColor: Colors.transparent,
+        shadowColor: Colors.transparent,
+        title: const Text(
+          '01 Введение',
+          style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+        ),
         centerTitle: true,
         automaticallyImplyLeading: true,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios),
-          onPressed: () {},
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            color: Color.fromARGB(255, 0, 0, 0),
+          ),
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return const HomePage();
+            }));
+          },
         ),
       ),
       body: const Center(child: Text('Welcome home')),
