@@ -1,5 +1,6 @@
-// import 'dart:html';
-// import 'dart:typed_data';
+
+import "../../widgets/search.dart";
+
 
 import 'package:flutter/material.dart';
 
@@ -13,8 +14,15 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Hello')),
+    return Scaffold(
+      body: Container(
+        child:SearchAppBar() ,
+        
+      ),
+      
+
     );
   }
 }
+
+const courses = ["Python", "JavaScript", "c++"];
