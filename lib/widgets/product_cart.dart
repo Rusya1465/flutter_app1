@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app1/widgets/product_cart.dart';
 
+import 'search.dart';
+
 class CartView extends StatefulWidget {
   CartView({Key? key}) : super(key: key);
 
