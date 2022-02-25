@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app1/pages/navpages/main_page.dart';
+import 'package:flutter_app1/pages/navpages/course_lesson_page/cources_detailes.dart';
+import 'package:flutter_app1/my_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-       
         primarySwatch: Colors.blue,
       ),
-      home: const MainPage()
+      // home: const MainPage(),
+      home: CourcesDetailes(),
     );
   }
 }
-
-

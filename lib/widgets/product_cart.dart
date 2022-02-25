@@ -20,7 +20,7 @@ class _CartViewState extends State<CartView> {
               fontWeight: FontWeight.bold,
               fontSize: 21.0,
             )),
-        SearchAppBar(),
+        // SearchAppBar(),
         SizedBox(
           height: 12.0,
         ),
