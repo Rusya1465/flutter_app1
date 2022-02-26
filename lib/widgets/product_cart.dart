@@ -30,16 +30,26 @@ class _CartViewState extends State<CartView> {
                           fontWeight: FontWeight.bold,
                           fontSize: 21.0,
                         ))),
-                        SizedBox(height: 28.0,),
-                        _ProductCart(),
-                        SizedBox(height: 28.0,),
-                        _ProductCart(),
-                         SizedBox(height: 28.0,),
-                        _ProductCart(),
-                         SizedBox(height: 28.0,),
-                        _ProductCart(),
-                         SizedBox(height: 28.0,),
-                        _ProductCart()
+                SizedBox(
+                  height: 28.0,
+                ),
+                _ProductCart(),
+                SizedBox(
+                  height: 28.0,
+                ),
+                _ProductCart(),
+                SizedBox(
+                  height: 28.0,
+                ),
+                _ProductCart(),
+                SizedBox(
+                  height: 28.0,
+                ),
+                _ProductCart(),
+                SizedBox(
+                  height: 28.0,
+                ),
+                _ProductCart()
               ],
             )
           ]),
@@ -94,26 +104,43 @@ class _ProductCart extends StatelessWidget {
               width: 200.0,
               child: Text('Python',
                   style: TextStyle(fontWeight: FontWeight.bold))),
-                  SizedBox(height:10.0,),
-               Row(children: [Container(width: 120.0, height: 20.0, child: Text('212 просмотров')),Container(width: 100.0, height: 20.0, child: Text('125 лайков'))],),
-               SizedBox(height: 10.0,),
-                Row(children: [Container(width: 120.0, height: 20.0, child: Text('28 уроков'))])
+          SizedBox(
+            height: 10.0,
+          ),
+          Row(
+            children: [
+              Container(
+                  width: 120.0, height: 20.0, child: Text('212 просмотров')),
+              Container(width: 100.0, height: 20.0, child: Text('125 лайков'))
+            ],
+          ),
+          SizedBox(
+            height: 10.0,
+          ),
+          Row(children: [
+            Container(width: 120.0, height: 20.0, child: Text('28 уроков'))
+          ])
         ])
       ],
     );
   }
 }
 
-
-
-
 class _CategoryView extends StatelessWidget {
   const _CategoryView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return ListView(children: [
-      Container(height: 20.0,width: 30.0,child: Center(child: Text('Python'),),)
-    ],);
+    return ListView(
+      children: [
+        Container(
+          height: 20.0,
+          width: 30.0,
+          child: Center(
+            child: Text('Python'),
+          ),
+        )
+      ],
+    );
   }
 }
