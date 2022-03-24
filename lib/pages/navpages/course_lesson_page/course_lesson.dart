@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_app1/pages/navpages/home_page.dart';
+import 'package:flutter_app1/pages/navpages/main_page.dart';
 import 'package:video_player/video_player.dart';
 
 class CourseLesson extends StatefulWidget {
@@ -30,12 +30,12 @@ class _CourseLessonState extends State<CourseLesson> {
           ),
           onPressed: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return const HomePage();
+              return const MainPage();
             }));
           },
         ),
       ),
-      body: const Center(child: Text('Welcome home')),
+      body: const VideoPlayerScreen(),
     );
   }
 }
